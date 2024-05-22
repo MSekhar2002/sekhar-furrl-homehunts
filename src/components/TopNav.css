@@ -1,0 +1,39 @@
+/* src/components/TopNav.css */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 15px 16px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    transition: 0.4s;
+    z-index: 1;
+  }
+  
+
+
+  .hamburger-menu{
+   
+  }
+  .left {
+    display: flex; /* Make children align horizontally */
+    align-items: center; /* Align items vertically */
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    flex-basis: 16.6667%;
+    flex-grow: 0;
+    max-width: 16.6667%;
+  }
+  .right {
+    display: flex; /* Make children align horizontally */
+    align-items: center; /* Align items vertically */
+  }
+  
+  /* Style links as icons */
+  .right a {
+    margin-left: 10px; /* Add space between icons */
+  }
+
+  

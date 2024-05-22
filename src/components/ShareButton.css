@@ -1,0 +1,12 @@
+/* src/components/ShareButton.css */
+.share-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ 
+  

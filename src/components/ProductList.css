@@ -1,0 +1,113 @@
+
+  /* src/components/ProductList.css */
+/* .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+    background-color: #f9f9f9;
+  }
+   */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@media only screen and (max-width: 768px) {
+   
+    .share-buttons {
+        position: absolute;
+        right: 10px;
+        display: flex;
+      }
+  .banner {
+    background-image: url("https://cdn.furrl.in/vibes/VibeCard_HomeHunts.jpg");
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    width: 100vw;
+    height: 200px !important;
+    max-height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  }
+
+  .banner-heading {
+    color: #fff;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-family: Montserrat, sans-serif;
+    filter: drop-shadow(4px 4px 4px #000);
+    margin-bottom: 10px;
+    
+  }
+
+  .products-wrapper {
+    padding: 10px;
+    padding-top: 5px;
+  }
+
+  .title {
+    display: flex;
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+  .dot{
+    align-self: center;
+    border: 3px solid grey;
+    border-radius: 50%;
+    height: 4px;
+    margin-left: 4px;
+    opacity: .4;
+    width: 4px;
+  }
+
+  .count {
+    color: grey;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 5px;  }
+
+  .filter-tabs {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 10px 0;
+    scrollbar-width: none;
+    overflow-x: auto ;
+    padding: 0;
+  }
+
+  .tab {
+    border: 1px solid #d2d0d0;
+    border-radius: 15px;
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 8px;
+    padding: 4px 10px;
+    text-align: center;
+    white-space: nowrap;
+
+  }
+
+  .active.tab {
+    color: #fff !important;
+    border: .5px solid var(--Gray---300, #cbd5e1) !important;
+    background-color: var(--Furrl---Primary, #7e59e7) !important;
+  }
+
+  .products-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+}
