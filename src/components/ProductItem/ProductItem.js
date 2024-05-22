@@ -1,7 +1,6 @@
-// src/components/ProductItem.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ShareButton from './ShareButton';
+import ShareButton from '../ShareButton/ShareButton';
 import './ProductItem.css';
 
 const ProductItem = ({ productD }) => {

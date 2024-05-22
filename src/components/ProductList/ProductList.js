@@ -1,76 +1,10 @@
-// // src/components/ProductList.js
-// import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
-// import ProductItem from './ProductItem';
-// import './ProductList.css';
-
-// const ProductList = () => {
-//   const [products, setProducts] = useState([]);
-//   const [page, setPage] = useState(1);
-//   const redirectToMobileApp = () => {
-//     if (window.innerWidth > 768) { 
-//       window.location.href = 'https://info.furrl.in/';
-//     }
-//   };
-// const deviceWidth = window.innerWidth;
-//   React.useEffect(() => {
-//     redirectToMobileApp();
-//   }, [deviceWidth]);
-
-//   useEffect(() => {
-//     const fetchProducts = async () => {
-//       const payload = {
-//         input: {
-//           page: page,
-//           pageSize: 10,
-//           filters: [],
-//           id: "#HomeHunts",
-//           entity: "vibe"
-//         }
-//       };
-
-//       try {
-//         const response = await axios.post('https://api.furrl.in/api/v2/listing/getListingProducts', payload);
-//         console.log(response.data); // Log the entire response to check its structure
-//         setProducts(prevProducts => [...prevProducts, ...response.data.data.getListingProducts.products]);
-//       } catch (error) {
-//         console.error('Error fetching products:', error);
-//       }
-//     };
-
-//     fetchProducts();
-//   }, [page]);
-
-//   const handleScroll = () => {
-//     if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 50) {
-//       setPage(prevPage => prevPage + 1);
-//     }
-//   };
-
-//   useEffect(() => {
-//     window.addEventListener('scroll', handleScroll);
-//     return () => window.removeEventListener('scroll', handleScroll);
-//   }, []);
-
-//   return (
-//     <div className="product-list">
-//       {products.map(product => (
-//         <ProductItem key={product.id} productD={product} />
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default ProductList;
-
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./ProductList.css";
-import CategoryFilters from "./CategoryFilters";
-import ProductItem from "./ProductItem";
-import LoadingSpinner from "./Loader";
-import SvgIcon from "./shareIcon";
+import CategoryFilters from "../CategoryFilter/CategoryFilters";
+import ProductItem from "../ProductItem/ProductItem";
+import LoadingSpinner from "../Loader/Loader";
+import SvgIcon from "../shareIcon";
 
 const initialProductState = {
     page: 0,

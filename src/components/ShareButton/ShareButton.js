@@ -1,8 +1,7 @@
-// src/components/ShareButton.js
 import React from 'react';
 import './ShareButton.css';
-import SvgIcon from './shareIcon';
-import WishlistIcon from './wishlistIcon';
+import SvgIcon from '../shareIcon';
+import WishlistIcon from '../wishlistIcon';
 
 const ShareButton = ({ productUrl }) => {
   const shareProduct = () => {
