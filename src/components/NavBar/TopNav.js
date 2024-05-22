@@ -33,9 +33,9 @@ const TopNav = () => {
       <Link to="/"  style={{width:"20px"}}><img src="https://furrl.in/_next/static/media/Furrl.13550a62.svg" alt='' style={{width:"60px"}}></img></Link>
     </div>
     <div className="right">
-      <Link to=""><img src='https://furrl.in/_next/static/media/Search.73a1749b.svg' alt='' ></img></Link>
-      <Link to="https://furrl.in/wishlist"><img src="https://furrl.in/_next/static/media/Whislist.2ac94d87.svg" alt='' ></img></Link>
-      <Link to="https://furrl.in/cart"><img src="https://furrl.in/_next/static/media/Bag.b94fa005.svg" alt='' ></img></Link>
+      <Link to=""><img src='https://furrl.in/_next/static/media/Search.73a1749b.svg'  style={{width:"22px"}} alt='' ></img></Link>
+      <Link to="https://furrl.in/wishlist"><img src="https://furrl.in/_next/static/media/Whislist.2ac94d87.svg" style={{width:"22px"}} alt='' ></img></Link>
+      <Link to="https://furrl.in/cart"><img src="https://furrl.in/_next/static/media/Bag.b94fa005.svg" style={{width:"22px"}} alt='' ></img></Link>
     
     </div>
   </div>
