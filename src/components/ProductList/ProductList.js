@@ -115,7 +115,7 @@ const HomeDetails = () => {
 
     const renderProductItems = () => {
         return productData.products.map((product, index) => (
-            <ProductItem key={product.id} productD={product} index={index} />
+            <ProductItem key={product.id} item={product} index={index} />
         ));
     };
 
@@ -129,7 +129,7 @@ const HomeDetails = () => {
                     </button></div>
             </div>
             <div className="products-wrapper">
-                
+
                 <p class="title">Shop Products <span class="dot"></span><span class="count">{productData.totalProducts} Products</span></p>
                 <ul className="filter-tabs">
                     <li
